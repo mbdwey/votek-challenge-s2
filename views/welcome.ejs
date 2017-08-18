@@ -21,8 +21,8 @@
 <ul>
   <% trees.forEach(function(tree){ %>
 <li>
-  <a href="visualize/tree?<%=tree._id%>"> <%=tree.tree_title%></a> -
-  <a href="visualize/tree?<%=tree._id%>"> [Export] </a>
+  <a href="visualize/?tree=<%=tree._id%>"> <%=tree.tree_title%></a> -
+  <a href="visualize/?tree=<%=tree._id%>"> [Export] </a>
 </li>
   <% }); %>
 
