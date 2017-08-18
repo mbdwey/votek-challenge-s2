@@ -1,0 +1,41 @@
+{
+  "name": "tree-visualizer",
+  "version": "1.0.0",
+  "description": "VOTEK Challenges Step 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbdwey/votek-challenge-s2.git"
+  },
+  "keywords": [
+    "Votek",
+    "D3",
+    "MENA"
+  ],
+  "author": "Mohamed Abo Bdwey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbdwey/votek-challenge-s2/issues"
+  },
+  "homepage": "https://github.com/mbdwey/votek-challenge-s2#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-fileupload": "^0.1.4",
+    "mongoose": "^4.11.7",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

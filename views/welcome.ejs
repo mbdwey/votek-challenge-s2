@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Please select JSON file to import new Tree</p>
+
+
+    <form ref='uploadForm' id='uploadForm' action='/' method='post' encType="multipart/form-data">
+    <input type="file" name="jsonFile" />
+    <input type='submit' value='Upload!' />
+    </form>
+
+
+    <br />
+    <p>Current Saved trees</p>
+
+<ul>
+  <% trees.forEach(function(tree){ %>
+<li>
+  <a href="visualize/tree?<%=tree._id%>"> <%=tree.tree_title%></a> -
+  <a href="visualize/tree?<%=tree._id%>"> [Export] </a>
+</li>
+  <% }); %>
+
+  </body>
+</html>
